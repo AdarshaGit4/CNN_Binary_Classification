@@ -2,7 +2,7 @@
 
 This project is a straightforward implementation of a CNN to distinguish between images of cats and dogs. The model is built using TensorFlow's Keras API and is trained on a dataset of cat and dog images.
 
-
+[Image of a cat and a dog]
 
 ---
 
@@ -14,10 +14,13 @@ The primary goal of this project is to build and train a CNN model that can accu
 
 ## 💾 Dataset
 
-The model was trained and tested on a dataset of thousands of cat and dog images.
+The model was trained and tested on a dataset containing thousands of cat and dog images. You can download the compressed dataset from the link below.
 
-* **Training Set**: 8000 images
-* **Test Set**: 2000 images
+**[Download the Dataset](https://www.dropbox.com/scl/fi/ppd8g3d6yoy5gbn960fso/dataset.zip?rlkey=lqbqx7z6i9hp61l6g731wgp4v&e=1&st=90952g57&dl=0)**
+
+After downloading, unzip the file to get the `dataset` folder. The folder is structured as follows:
+* **Training Set**: 8000 images (`dataset/training_set`)
+* **Test Set**: 2000 images (`dataset/test_set`)
 
 The `ImageDataGenerator` from Keras was used for image augmentation on the training data. This process, which included rescaling, shearing, zooming, and horizontal flipping, helps increase the diversity of the training set to prevent overfitting. The test set images were only rescaled.
 
